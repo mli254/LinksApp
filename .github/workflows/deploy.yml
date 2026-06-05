@@ -38,8 +38,7 @@ jobs:
         with:
           node-version: lts/*
           cache: 'npm'
-      - name: Enter app file
-        run: cd "links-app"
+          cache-dependency-path: links-app/package-lock.json
       - name: Install dependencies
         run: npm ci
       - name: Build
