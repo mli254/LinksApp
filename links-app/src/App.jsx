@@ -1,15 +1,55 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+// import { useState } from 'react'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from './assets/vite.svg'
+// import heroImg from './assets/hero.png'
 import './App.css'
 
+const links = [
+  {title: "resume", id: 1, src: "placeholder", link: "https://github.com/mli254"},
+  {title: "portfolio", id: 2, src: "placeholder", link: "https://github.com/mli254"},
+  {title: "github", id: 3, src: "placeholder", link: "https://github.com/mli254"},
+  {title: "linkedin", id: 4, src: "placeholder", link: "https://www.linkedin.com/in/limadison/"}
+]
+
+function LinkCard({link}) {
+  return (<>
+    <p>
+      <a 
+      href={link.link} 
+      target="_blank" 
+      alt="opens in new tab"
+      rel="noreferrer noopener">
+        <div>
+          {link.title}
+          {link.link}
+          </div>
+      </a>
+    </p>
+  </>)
+}
+
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   return (
     <>
-      <section id="center">
+      <div id="center_card">
+        <div id="light_mode">
+          <button type="button">Toggle Light Mode</button>
+        </div>
+
+        <div id="profile">
+          <h1>Madison Li</h1>
+          <p>Software & Game Developer</p>
+          <p>Sunnyvale, CA</p>
+        </div>
+
+        <div id="links">
+          {links.map((link) => <LinkCard link={link} key={link.id}/>)}
+        </div>
+
+      </div>
+      {/* <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
           <img src={reactLogo} className="framework" alt="React logo" />
@@ -114,7 +154,7 @@ function App() {
       </section>
 
       <div className="ticks"></div>
-      <section id="spacer"></section>
+      <section id="spacer"></section> */}
     </>
   )
 }
