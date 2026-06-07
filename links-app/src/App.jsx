@@ -41,7 +41,7 @@ function LinkCard({link}) {
         </div>
         <div>
           <h1 class="font-[Open_Sans] text-sm md:text-lg font-semibold">{link.title}</h1>
-          <h2 class="font-[Open_Sans] text-xs md:text-sm text-black/50 dark:text-white/50 flex shrink-1 gap-x-1 items-center"><FontAwesomeIcon icon={faLink} /> {link.link}</h2>
+          <h2 class="font-[Open_Sans] text-xs md:text-sm text-black/50 dark:text-white/50 shrink gap-x-1 items-center"><FontAwesomeIcon icon={faLink} /> {link.link}</h2>
           </div>
         </div>
       </a>
@@ -60,7 +60,7 @@ function App() {
             type="button" 
             aria-label="Toggles theme between light or dark mode" 
             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-            class="bg-[#FBFFF5] dark:bg-[#54574F] box-border dark:border-[#D3F26A] border-1 rounded-full p-2 shadow-[2px_3px_rgba(0,0,0)] dark:shadow-[3px_3px_#D3F26A] transition delay-100 duration-100 ease-in-out hover:shadow-none hover:translate-1 active:bg-[#C6CCC0]">
+            class="bg-[#FBFFF5] dark:bg-[#54574F] box-border dark:border-[#D3F26A] border-1 rounded-full p-2 shadow-[2px_3px_rgba(0,0,0)] dark:shadow-[3px_3px_#D3F26A] transition ease-in-out hover:shadow-none hover:translate-1 active:bg-[#C6CCC0]">
             {theme=== 'dark' ? <FontAwesomeIcon icon={faMoon} size="lg"/> : <FontAwesomeIcon icon={faSun} size="lg"/>}
             </button>
         </div>
