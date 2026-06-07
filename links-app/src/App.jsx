@@ -39,7 +39,7 @@ function LinkCard({link}) {
   return (<>
     <div 
       aria-label="Madison's Links"
-      class="box box-border dark:border-[#D3F26A] border-1 rounded-xl p-5 mx-4 md:mx-8 bg-[#FBFFF5] dark:bg-[#54574F] shadow-[3px_3px_rgba(0,0,0)] dark:shadow-[3px_3px_#D3F26A] transition delay-80 duration-100 ease-in-out hover:shadow-none hover:translate-1 active:bg-[#C6CCC0]">
+      class="box box-border border-black dark:border-[#D3F26A] border-1 rounded-xl p-5 mx-4 md:mx-8 bg-[#FBFFF5] dark:bg-[#54574F] shadow-[3px_3px_rgba(0,0,0)] dark:shadow-[3px_3px_#D3F26A] transition delay-80 duration-100 ease-in-out hover:shadow-none hover:translate-1 active:bg-[#C6CCC0]">
       <a 
       href={link.link} 
       target="_blank" 
@@ -80,13 +80,13 @@ function App() {
     {/* Main center card; becomes thinner on smaller screens */}
       <div 
         aria-label="central-card"
-        class="box box-border dark:border-[#D3F26A] border-2 rounded-xl w-100 md:w-150 mx-auto p-10 bg-[#D5DBC3] dark:bg-[#282924] shadow-[5px_5px_rgba(0,0,0)] dark:shadow-[5px_5px_#D3F26A]">
+        class="box box-border border-black dark:border-[#D3F26A] border-2 rounded-xl w-100 md:w-150 mx-auto p-10 bg-[#D5DBC3] dark:bg-[#282924] shadow-[5px_5px_rgba(0,0,0)] dark:shadow-[5px_5px_#D3F26A]">
         {/* Dark/Light Mode toggle */}
         <button 
           type="button" 
           aria-label="Toggles theme between light or dark mode" 
           onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-          class="bg-[#FBFFF5] dark:bg-[#54574F] box-border dark:border-[#D3F26A] border-1 rounded-full p-2 shadow-[2px_3px_rgba(0,0,0)] dark:shadow-[3px_3px_#D3F26A] transition ease-in-out hover:shadow-none hover:translate-1 active:bg-[#C6CCC0]">
+          class="bg-[#FBFFF5] dark:bg-[#54574F] box-border border-black dark:border-[#D3F26A] border-1 rounded-full p-2 shadow-[2px_3px_rgba(0,0,0)] dark:shadow-[3px_3px_#D3F26A] transition ease-in-out hover:shadow-none hover:translate-1 active:bg-[#C6CCC0]">
           {theme === 'dark' ? <FontAwesomeIcon icon={faMoon} size="lg"/> : <FontAwesomeIcon icon={faSun} size="lg"/>}
         </button>
 
@@ -97,7 +97,7 @@ function App() {
 
         {/* Profile */}
         <div class="text-center">
-          <img src={profile_img} alt="image of Madison Li" class="rounded-full w-45 h-45 object-cover object-top mx-auto box-border dark:border-[#D3F26A] border-1 shadow-[2px_3px_rgba(0,0,0)] dark:shadow-[2px_3px_#D3F26A]"
+          <img src={profile_img} alt="image of Madison Li" class="rounded-full w-45 h-45 object-cover object-top mx-auto box-border border-black dark:border-[#D3F26A] border-1 shadow-[2px_3px_rgba(0,0,0)] dark:shadow-[2px_3px_#D3F26A]"
           />
           <div class="p-5 mb-8">
             <h1 class="font-[Open_Sans] text-2xl font-bold">Madison Li</h1>
