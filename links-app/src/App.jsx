@@ -37,11 +37,13 @@ function useDarkMode() {
 {/* Because links open in new tabs, contains an aria-label to indicate what clicking on the card will do for accessibility reasons*/}
 function LinkCard({link}) {
   return (<>
-    <div class="box box-border dark:border-[#D3F26A] border-1 rounded-xl p-5 mx-4 md:mx-8 bg-[#FBFFF5] dark:bg-[#54574F] shadow-[3px_3px_rgba(0,0,0)] dark:shadow-[3px_3px_#D3F26A] transition delay-80 duration-100 ease-in-out hover:shadow-none hover:translate-1 active:bg-[#C6CCC0]">
+    <div 
+      aria-label="Madison's Links"
+      class="box box-border dark:border-[#D3F26A] border-1 rounded-xl p-5 mx-4 md:mx-8 bg-[#FBFFF5] dark:bg-[#54574F] shadow-[3px_3px_rgba(0,0,0)] dark:shadow-[3px_3px_#D3F26A] transition delay-80 duration-100 ease-in-out hover:shadow-none hover:translate-1 active:bg-[#C6CCC0]">
       <a 
       href={link.link} 
       target="_blank" 
-      aria-label={`Opens a link to Madison's ${link.title} in new tab`}
+      aria-labelledby={`Opens a link to Madison's ${link.title} in new tab`}
       rel="noreferrer noopener">
         <div class="flex flex-row gap-x-2 items-center">
           <div>
@@ -76,7 +78,9 @@ function App() {
   return (
     <>
     {/* Main center card; becomes thinner on smaller screens */}
-      <div class="box box-border dark:border-[#D3F26A] border-2 rounded-xl w-100 md:w-150 mx-auto p-10 bg-[#D5DBC3] dark:bg-[#282924] shadow-[5px_5px_rgba(0,0,0)] dark:shadow-[5px_5px_#D3F26A]">
+      <div 
+        aria-label="central-card"
+        class="box box-border dark:border-[#D3F26A] border-2 rounded-xl w-100 md:w-150 mx-auto p-10 bg-[#D5DBC3] dark:bg-[#282924] shadow-[5px_5px_rgba(0,0,0)] dark:shadow-[5px_5px_#D3F26A]">
         {/* Dark/Light Mode toggle */}
         <button 
           type="button" 
@@ -98,7 +102,7 @@ function App() {
           <div class="p-5 mb-8">
             <h1 class="font-[Open_Sans] text-2xl font-bold">Madison Li</h1>
             <p class="font-[Akatab] text-lg text-black/50 dark:text-white/50">Software & Game Developer</p>
-            <p class="font-[Iosevka_Charon] text-black/30 dark:text-white/30"><FontAwesomeIcon icon={faLocationDot} /> Sunnyvale, CA</p>
+            <p class="font-[Iosevka_Charon] text-black/40 dark:text-white/40"><FontAwesomeIcon icon={faLocationDot} /> Sunnyvale, CA</p>
             </div>
         </div>
 
