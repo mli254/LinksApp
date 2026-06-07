@@ -40,8 +40,8 @@ function LinkCard({link}) {
           {link.icon}
         </div>
         <div>
-          <h1 class="font-[Open_Sans] text-lg font-semibold">{link.title}</h1>
-          <h2 class="font-[Open_Sans] text-sm text-black/50 dark:text-white/50 text-wrap"><FontAwesomeIcon icon={faLink} /> {link.link}</h2>
+          <h1 class="font-[Open_Sans] text-sm md:text-lg font-semibold">{link.title}</h1>
+          <h2 class="font-[Open_Sans] text-xs md:text-sm text-black/50 dark:text-white/50 flex shrink-1 gap-x-1 items-center"><FontAwesomeIcon icon={faLink} /> {link.link}</h2>
           </div>
         </div>
       </a>
