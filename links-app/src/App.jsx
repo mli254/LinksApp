@@ -80,7 +80,7 @@ function App() {
     {/* Main center card; becomes thinner on smaller screens */}
       <div 
         aria-label="central-card"
-        class="box box-border border-black dark:border-[#D3F26A] border-2 rounded-lg w-75 md:w-110 mx-auto p-5 bg-[#D5DBC3] dark:bg-[#282924] shadow-[4px_4px_rgba(0,0,0)] dark:shadow-[4px_4px_#D3F26A]">
+        class="box box-border border-black dark:border-[#D3F26A] border-2 rounded-lg w-80 sm:w-95 md:w-110 mx-auto p-5 bg-[#D5DBC3] dark:bg-[#282924] shadow-[4px_4px_rgba(0,0,0)] dark:shadow-[4px_4px_#D3F26A]">
         {/* Dark/Light Mode toggle */}
         <button 
           type="button" 
