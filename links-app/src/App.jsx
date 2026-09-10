@@ -6,8 +6,8 @@ import profile_img from './assets/profile.jpg'
 import './App.css'
 
 const links = [
-  {title: "Resume", id: 1, icon: <FontAwesomeIcon icon={faFilePdf} size="lg"/>, link: "https://bit.ly/madison-li-resume"},
-  {title: "Portfolio", id: 2, icon: <FontAwesomeIcon icon={faCode} size="lg"/>, link: "https://bit.ly/madison-li-portfolio"},
+  {title: "Resume", id: 1, icon: <FontAwesomeIcon icon={faFilePdf} size="lg"/>, link: "https://mli254.github.io/Portfolio/pages/resume.html"},
+  {title: "Portfolio", id: 2, icon: <FontAwesomeIcon icon={faCode} size="lg"/>, link: "https://mli254.github.io/Portfolio"},
   {title: "Github", id: 3, icon: <FontAwesomeIcon icon={faGithub} size="lg"/>, link: "https://github.com/mli254"},
   {title: "Linkedin", id: 4, icon: <FontAwesomeIcon icon={faLinkedin} size="lg"/>, link: "https://www.linkedin.com/in/limadison/"}
 ]
